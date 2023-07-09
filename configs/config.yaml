@@ -1,0 +1,28 @@
+defaults:
+  - override hydra/job_logging: custom
+  
+processing:
+  device: cuda
+  image_width: 180
+  image_height: 50 
+  
+training:
+  lr: 3e-4
+  batch_size: 8
+  num_workers: 4
+  num_epochs: 100
+
+bools:
+  DISPLAY_ONLY_WRONG_PREDICTIONS: true
+  VIEW_INFERENCE_WHILE_TRAINING: true
+  SAVE_CHECKPOINTS: false
+
+paths:
+  dataset_dir: ./dataset
+  save_model_as: ./logs/crnn.pth
+
+model:
+  use_attention: true 
+  use_ctc: true
+  gray_scale: false
+  dims: 256

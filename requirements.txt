@@ -1,0 +1,7 @@
+torch
+torchvision
+torchmetrics
+pytorch-lightning
+rich
+tensorboard
+pytest
