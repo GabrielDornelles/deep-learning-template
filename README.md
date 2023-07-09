@@ -1,6 +1,6 @@
 # deep-learning-template
 
-This project is mean to be used as a boilerplate. Re-use parts of it as you want. Feedback and upgrades are appreciated.
+This project is meant to be used as a boilerplate. Re-use parts of it as you want. Feedback and upgrades are appreciated.
 
 ## Docker
 
@@ -69,6 +69,13 @@ Additionally, running `pytest -s` makes your print statements visible in the ter
 ## Pre-commit
 
 Our pre-commit file applies a very simple code stylization, `flake8` and `black`.
+
+Run black: 
+
+```sh
+black ./ --config=pyproject.toml
+black ./ --config=pyproject.toml --check # for checking instead of applying changes
+```
 
 TODO: write about it.
 
