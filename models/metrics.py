@@ -3,7 +3,7 @@ import torchmetrics
 
 class Metrics:
     def __init__(self, num_classes):
-
+        # Define your desired metrics
         self.train_accuracy_metric = torchmetrics.Accuracy(task="multiclass", num_classes=num_classes, top_k=1)
 
         self.val_accuracy_metric = torchmetrics.Accuracy(task="multiclass", num_classes=num_classes, top_k=1)

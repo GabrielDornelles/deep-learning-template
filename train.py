@@ -1,7 +1,7 @@
-from models.resnet import ResNet18
+import pytorch_lightning as pl
 from pytorch_lightning.callbacks import ModelCheckpoint
 from pytorch_lightning.callbacks import RichProgressBar
-import pytorch_lightning as pl
+from models.resnet import ResNet18
 
 
 if __name__ == "__main__":
